@@ -3,7 +3,7 @@ import React from 'react'
 const Demo = (props) => {
     console.log(props);
     return (
-        <div>{props.number}</div>
+        <h1>{props.number}</h1>
     )
 }
 
