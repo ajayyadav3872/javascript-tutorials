@@ -9,6 +9,7 @@ class App extends Component{
     this.state = {
       demo: "Testing",
     };
+    this.buttonClickHandler = this.buttonClickHandler.bind(this);
   }
 
   buttonClickHandler (){
@@ -19,7 +20,7 @@ class App extends Component{
     return(
       <div className='App'>
         <Person name= "Ajay Yadav" age= "23"/>
-        <button type='button' onClick={this.buttonClickHandler.bind(this)}>
+        <button type='button' onClick={this.buttonClickHandler}>
           Click Me
         </button>
       </div>
